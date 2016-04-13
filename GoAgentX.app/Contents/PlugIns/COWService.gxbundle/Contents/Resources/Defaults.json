@@ -1,0 +1,5 @@
+{
+    "LoadBalance": "backup",
+    "SSHServerPort": "22",
+    "SSMethod": "rc4"
+}

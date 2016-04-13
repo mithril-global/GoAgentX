@@ -1,0 +1,27 @@
+[shrpx]
+frontend=127.0.0.1,{LocalPort2}
+backend={RemoteServer},{RemotePort}
+{ProxyEnabled}backend-http-proxy-uri=http://{ProxyAuth}{ProxyAddress}:{ProxyPort}
+# private-key-file=/path/to/server.key
+# certificate-file=/path/to/server.crt
+# spdy-proxy=no
+workers=1
+client=yes
+#log-level=INFO
+{DontValidateServerCert}insecure=yes
+
+
+[3proxy]
+nscache 65536
+timeouts 1 5 30 60 180 1800 15 60
+log
+logformat "- +_L%t.%.  %N.%p %E %U %C:%c %R:%r %O %I %h %T"
+rotate 7
+ 
+auth iponly
+allow *
+ 
+parent 1000 http localhost {LocalPort2} {Username} {Password}
+
+proxy -a -p{LocalPort}
+

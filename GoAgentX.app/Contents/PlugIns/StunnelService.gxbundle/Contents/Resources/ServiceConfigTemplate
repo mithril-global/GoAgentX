@@ -1,0 +1,12 @@
+client = yes 
+pid={WorkDirectory}/stunnel.pid
+debug=5
+foreground=yes
+sslVersion=all
+verify=0
+syslog=no
+fips=no
+
+[proxy]
+accept = 127.0.0.1:{LocalPort}
+{ServerList}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>13E28</string>
+	<key>CFBundleExecutable</key>
+	<string>goagent</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.goagentx.goagent</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>goagent</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.1.18</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>11</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>6A317</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>13F26</string>
+	<key>DTSDKName</key>
+	<string>macosx10.9</string>
+	<key>DTXcode</key>
+	<string>0600</string>
+	<key>DTXcodeBuild</key>
+	<string>6A317</string>
+	<key>GXHelpURLs</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>goagent 项目主页</string>
+			<key>URL</key>
+			<string>https://code.google.com/p/goagent/</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>goagent GAE平台部署教程</string>
+			<key>URL</key>
+			<string>https://code.google.com/p/goagent/wiki/InstallGuide</string>
+		</dict>
+	</array>
+	<key>Homepage</key>
+	<string>https://goagent.googlecode.com</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2013年 GoAgentX.com. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>GAGoAgentService</string>
+	<key>SUFeedURL</key>
+	<string>https://goagentx.com/update/goagent.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+</dict>
+</plist>

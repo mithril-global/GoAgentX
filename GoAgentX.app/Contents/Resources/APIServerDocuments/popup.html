@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>GoAgentX Helper</title>
+        <link rel="stylesheet" type="text/css" href="pure-min.css" />
+        <style type="text/css">
+        	body { color: #999; font-family: sans-serif; font-size: 15px; padding: 10px 20px; }
+        	#domain, #profile { width: 280px; font-size: 14px; }
+        	.pure-button-warning { color: white; background: rgb(202, 60, 60); }
+        </style>
+    </head>
+    <body>
+		<form id="form" class="pure-form pure-form-stacked">
+			<fieldset>
+				<label for="domain">Rule:</label>
+		    	<input type="text" id="domain" />
+
+		    	<label for="profile">Profile:</label>
+		    	<select id="profile">
+		    		<option>Loading...</option>
+		    	</select>
+		    	<div style="text-align:center">
+			    	<button id="btn" type="submit" class="pure-button">Checking...</button>
+			    </div>
+			</fieldset>
+	    </form>
+	    Page will be reloaded automatically.
+	    <a id="url_host"></a>
+	    <iframe id="sandbox" src="sandbox.html" width="0" height="0" frameborder="0"></iframe>
+	    <script type="text/javascript" src="zepto.min.js"></script>
+	    <script type="text/javascript" src="popup.js"></script>
+    </body>
+</html>

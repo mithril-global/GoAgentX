@@ -1,0 +1,15 @@
+{
+    "LocalPort": "8087",
+    "LocalIP": "127.0.0.1",
+    "EnableObfuscate": false,
+    "ConnectionMode": "HTTPS",
+    "ConnectionProfile": "HK",
+    "UseGAEFetch": true,
+    "UsePHPFetch": false,
+    "ServicePassword": "",
+    "GAEProfile": 0,
+    "ConnectMode": 1,
+    "ProxyEnabled": false,
+    "ProxyPort": "8080",
+    "EnableKeepAlive": 1
+}

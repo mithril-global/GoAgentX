@@ -1,0 +1,30 @@
+[listen]
+ip = {LocalIP}
+port = {LocalPort}
+
+[gae]
+enable = {UseGAEFetch}
+appid = {AppIds}
+password = {ServicePassword}
+mode = {ConnectMode}
+profile = {GAEProfile}
+obfuscate = {EnableObfuscate}
+options = {EnableRC4Encrypt}
+keepalive = {EnableKeepAlive}
+
+[pac]
+enable = 0
+
+[php]
+enable = {UsePHPFetch}
+password = {ServicePassword}
+listen = {LocalIP}:{LocalPaaSPort}
+fetchserver = {AppIds}
+
+[proxy]
+enable = {ProxyEnabled}
+autodetect = 1
+host = {ProxyHost}
+port = {ProxyPort}
+username = {ProxyUsername}
+password = {ProxyPassword}

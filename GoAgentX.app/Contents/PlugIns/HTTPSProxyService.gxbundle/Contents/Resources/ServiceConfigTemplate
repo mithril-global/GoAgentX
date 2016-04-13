@@ -1,0 +1,7 @@
+{
+    "server": "{RemoteServer}:{RemotePort}",
+    "listen_ip": "127.0.0.1",
+    "listen_port": {LocalPort},
+    "username": "{Username}",
+    "password": "{Password}"
+}

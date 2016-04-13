@@ -1,0 +1,14 @@
+{
+  "ConnectMode": {
+    "0": "http",
+    "1": "https"
+  },
+  "GAEProfile": {
+    "0": "ipv4",
+    "1": "ipv6"
+  },
+    "EnableRC4Encrypt": {
+        "0": "",
+        "1": "rc4"
+    }
+}

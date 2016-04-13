@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    </head>
+    <body>
+	    <script type="text/javascript">
+			function dnsResolve(host) { return host; }
+			function isInNet() { return false; }
+			function shExpMatch(url, pattern) {
+				pattern = pattern.replace(/\./g, '\\.');
+				pattern = pattern.replace(/\*/g, '.*');
+				pattern = pattern.replace(/\?/g, '.');
+				var newRe = new RegExp('^' + pattern + '$');
+				return newRe.test(url);
+			}
+
+			var lastFindUrl = '', lastFindHost = '';
+
+			window.addEventListener('message', function(event) {
+				var cmd = event.data.command;
+				var pac = event.data.pac;
+				var url = event.data.url;
+				var host = event.data.host;
+
+				if (cmd == 'pac') {
+					eval.call(window, pac);
+					event.source.postMessage({ command: 'pac_loaded' }, event.origin);
+
+				} else if (cmd =='find_rule') {
+					if (typeof(FindProxyForURL) != 'undefined') {
+						var rule = FindProxyForURL(url, host, true);
+						event.source.postMessage({ command: 'rule_found', rule: rule }, event.origin);
+					}
+				}
+			});
+	    </script>
+    </body>
+</html>

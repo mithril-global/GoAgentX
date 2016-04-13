@@ -1,0 +1,8 @@
+{
+    "server":"{ServerAddress}",
+    "server_port":{ServerPort},
+    "local_port":{LocalPort},
+    "password":"{ServicePassword}",
+    "timeout":{Timeout},
+    "method": "{EncryptMethod}"
+}

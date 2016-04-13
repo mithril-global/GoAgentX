@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<dictionary title="GoAgentX Terminology">
+    
+	<suite name="Standard Suite" code="????" description="Common classes and commands for all applications.">
+        
+        <enumeration name="status options" code="stso">
+            <enumerator name="running" code="runn" description="Toggle current service to running" />
+            <enumerator name="stopped" code="stop" description="Toggle current service to stopped" />
+        </enumeration>
+        
+        <command name="toggle status" code="togsrvst" description="Toggle current service status">
+            <cocoa class="GAToggleServiceStatusCommand" />
+            <parameter name="of" code="prof" type="text" optional="no" description="Profile name">
+                <cocoa key="ProfileName" />
+            </parameter>
+            <parameter name="to" code="stto" type="status options" optional="yes" description="Toggle service status to specified stauts">
+                <cocoa key="Status" />
+            </parameter>
+        </command>
+        
+        <enumeration name="proxy options" code="pxyo">
+            <enumerator name="use pac" code="upac" description="Set system proxy perference to use PAC" />
+            <enumerator name="global proxy" code="glob" description="Set system proxy preference to use GoAgentX as global proxy" />
+            <enumerator name="standalone" code="nchg" description="Don't change system proxy preference" />
+        </enumeration>
+        
+        <command name="toggle proxy mode" code="stpxstto">
+            <cocoa class="GASetProxySettingCommand" />
+            <parameter name="to" code="pxto" type="proxy options" description="Toggle service status to specified stauts">
+                <cocoa key="ProxySetting" />
+            </parameter>
+        </command>
+        
+        <!--<command name="toggle active service" code="togactsv">
+            <cocoa class="GAToggleServiceCommand" />
+            <parameter name="to" code="asto" type="text" description="Toggle active service">
+                <cocoa key="ServiceTitle" />
+            </parameter>
+         </command>-->
+        
+        <enumeration name="profile options" code="pfop">
+            <enumerator name="direct connection" code="drct" description="Use Direct Connection" />
+            <enumerator name="running profiles" code="rnpf" description="Use Running Profiles" />
+        </enumeration>
+        
+        <command name="modify rules" code="modpacls">
+            <cocoa class="GAModifyPACListCommand" />
+            <parameter name="add" code="addm" type="text" optional="yes" description="Add domain to pac list">
+                <cocoa key="AddDomain" />
+            </parameter>
+            <parameter name="remove" code="rmdm" type="text" optional="yes" description="Remove domain from pac list">
+                <cocoa key="RemoveDomain" />
+            </parameter>
+            <parameter name="using" code="pfop" type="profile options" optional="yes" description="Rules use sepecified connection">
+                <cocoa key="Profile" />
+            </parameter>
+        </command>
+        
+        <enumeration name="main window tab options" code="mwto">
+            <enumerator name="services tab" code="srvs" description="Services tab" />
+            <enumerator name="proxy settings tab" code="pxst" description="Proxy settings tab" />
+            <enumerator name="bundles tab" code="bndl" description="Bundles tab" />
+            <enumerator name="other settings tab" code="otst" description="Other settings tab" />
+            <enumerator name="about tab" code="abut" description="About  tab" />
+        </enumeration>
+        
+        <command name="show main window" code="showmawd">
+            <cocoa class="GAShowMainWindowCommand" />
+            <parameter name="with" code="with" type="main window tab options" optional="yes" description="Active specified tab">
+                <cocoa key="ActiveTab" />
+            </parameter>
+        </command>
+	</suite>
+    
+</dictionary>

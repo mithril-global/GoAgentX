@@ -1,0 +1,13 @@
+nscache 65536
+timeouts 1 5 30 60 180 1800 15 60
+log
+logformat "- +_L%t.%.  %N.%p %E %U %C:%c %R:%r %O %I %h %T"
+rotate 7
+ 
+auth iponly
+allow *
+ 
+{ParentProxies}
+
+{LocalProxyType} -a -p{LocalPort}
+

@@ -1,0 +1,7 @@
+{
+    "UseCustomIdentityFile": false,
+    "UsePublicKeyAuth": false,
+    "RemotePort": "22",
+    "LocalPort": "7575",
+    "ListenOnRemote": false
+}
