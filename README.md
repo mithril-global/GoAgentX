@@ -15,6 +15,10 @@ GoAgentX currently supports:
 
 You can also add support for other proxy services easily.
 
+# Screenshot
+
+![screenshot](https://github.com/mithril-global/GoAgentX/raw/master/screenshot.png)
+
 # Download
 
 Clone the repository or download master branch as [zip](https://github.com/mithril-global/GoAgentX/archive/master.zip)
