@@ -2,9 +2,12 @@
 
 This is an unofficial distribution of GoAgentX 2.x with (somehow) updated dependencies.
 
+非官方GoAgentX 2.x 发行版
+
 GoAgentX is an almighty proxy client and process manager for Mac OS X.
 
-GoAgentX currently supports:
+GoAgentX currently supports:  
+现支持如下协议：
 
 - shadowsocks
 - cow
@@ -22,6 +25,10 @@ You can also add support for other proxy services easily.
 # Download
 
 Clone the repository or download master branch as [zip](https://github.com/mithril-global/GoAgentX/archive/master.zip)
+
+# Install
+
+Drag `GoAgentX.app` to your Applications folder.
 
 # How to update ss-local
 
