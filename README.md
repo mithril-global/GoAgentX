@@ -30,6 +30,11 @@ Clone the repository or download master branch as [zip](https://github.com/mithr
 
 Drag `GoAgentX.app` to your Applications folder.
 
+# CHANGELOG
+
+- 2016/7/1 Supports chacha20 (Now you can choose in the drop-down)
+- 2016/4/13 Updated shadowsocks-libev to 2.4.5, cow to 0.9.6
+
 # How to update ss-local
 
 First install ss-local using Homebrew.
