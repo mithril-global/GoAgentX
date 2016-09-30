@@ -2,7 +2,7 @@
 
 This is an unofficial distribution of GoAgentX 2.x with (somehow) updated dependencies.
 
-非官方GoAgentX 2.x 发行版，SS及COW已经更新到最新。
+非官方GoAgentX 2.x 发行版，SS及COW已经更新到最新。测试兼容 El Capitan 与 Sierra 。
 
 GoAgentX is an almighty proxy client and process manager for Mac OS X.
 
@@ -48,6 +48,8 @@ Now enjoy :)
 # Acknowledgement
 
 All binaries are from their corresponding upstream.
+
+For obvious reasons, please see the credits inside the About section in the downloaded application.
 
 # Disclaimer
 
