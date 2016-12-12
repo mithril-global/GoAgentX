@@ -18,6 +18,14 @@ GoAgentX currently supports:
 
 You can also add support for other proxy services easily.
 
+# Note for Sierra users
+
+若提示“包已损坏”，请：
+
+1. 打开终端输入如下命令：`sudo spctl --master-disable`并键入您的密码（解除完整性检查）。
+2. 再次双击打开程序包。
+3. 终端输入`sudo spctl --master-enable`并键入密码（重新启用完整性检查）。
+
 # Screenshot
 
 ![screenshot](https://github.com/mithril-global/GoAgentX/raw/master/screenshot.png)
@@ -32,6 +40,7 @@ Drag `GoAgentX.app` to your Applications folder.
 
 # CHANGELOG
 
+- 2016/12/1 Added docs on "Package damaged" on Sierra
 - 2016/7/1 Supports chacha20 (Now you can choose in the drop-down)
 - 2016/4/13 Updated shadowsocks-libev to 2.4.5, cow to 0.9.6
 
