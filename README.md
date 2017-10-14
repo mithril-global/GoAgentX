@@ -2,7 +2,7 @@
 
 This is an unofficial distribution of GoAgentX 2.x with (somehow) updated dependencies.
 
-非官方GoAgentX 2.x 发行版，SS及COW已经更新到最新。测试兼容 El Capitan 与 Sierra 。
+非官方GoAgentX 2.x 发行版，SS及COW已经更新到最新。测试兼容 El Capitan 与 High Sierra 。
 
 GoAgentX is an almighty proxy client and process manager for Mac OS X.
 
@@ -40,6 +40,7 @@ Drag `GoAgentX.app` to your Applications folder.
 
 # CHANGELOG
 
+- 2017/10/12 Updated COW for High Sierra, now using MEOW 1.5 instead
 - 2016/12/1 Added docs on "Package damaged" on Sierra
 - 2016/7/1 Supports chacha20 (Now you can choose in the drop-down)
 - 2016/4/13 Updated shadowsocks-libev to 2.4.5, cow to 0.9.6
