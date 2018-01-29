@@ -1,0 +1,14 @@
+{
+    "server":"{ServerAddress}",
+    "server_port":{ServerPort},
+    "local_port":{LocalPort},
+    "password":"{ServicePassword}",
+    "timeout":{Timeout},
+    "method": "{EncryptMethod}",
+    "obfs": "",
+    "obfs_param": "",
+    "tcp_over_udp": false,
+    "udp_over_tcp": false,
+    "protocol": "",
+    "obfs_udp": false
+}
