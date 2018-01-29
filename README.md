@@ -10,6 +10,7 @@ GoAgentX currently supports:
 现支持如下协议：
 
 - shadowsocks
+- shadowsocksR
 - cow
 - GoAgent
 - SSH Tunnel
@@ -21,6 +22,12 @@ You can also add support for other proxy services easily.
 # Note for Sierra users
 
 若提示“包已损坏”，请：
+
+### Method 1:
+
+右键->打开
+
+### Method 2:
 
 1. 打开终端输入如下命令：`sudo spctl --master-disable`并键入您的密码（解除完整性检查）。
 2. 再次双击打开程序包。
@@ -40,6 +47,7 @@ Drag `GoAgentX.app` to your Applications folder.
 
 # CHANGELOG
 
+- 2018/1/29 Updated shadowsocksR for all platforms, options should be put in the "Advanced Config Template" section
 - 2017/10/12 Updated COW for High Sierra, now using MEOW 1.5 instead
 - 2016/12/1 Added docs on "Package damaged" on Sierra
 - 2016/7/1 Supports chacha20 (Now you can choose in the drop-down)
